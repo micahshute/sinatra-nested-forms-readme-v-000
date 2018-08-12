@@ -7,12 +7,12 @@ class Course
     end
 
     def self.from_params(params)
-        self.new(name: params[:name], topic: params[:topic])
+        Course.new(name: params[:name], topic: params[:topic])
     end
 
     attr_reader :name, :topic
 
-    def intialize(name: , topic:)
+    def initialize(name: , topic:)
         @name = name
         @topic = topic
         self.save

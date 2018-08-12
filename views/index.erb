@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="student" action="/student" method="post">
+      <label for="student_name">Student Name:</label>
+      <input type="text" name="student[name]" id="student_name">
+      <label for="student_grade">Student Grade:</label>
+      <input type="text" name="student[grade]" id="student_grade">
+      <label for="course1_name">Course Name:</label>
+      <input type="text" name="student[courses][][name]" id="course1_name">
+      <label for="course1_topic">Course Topic:</label>
+      <input type="text" name="student[courses][][topic]" id="course1_topic">
+      <label for="course2_name">Course Name:</label>
+      <input type="text" name="student[courses][][name]" id="course2_name">
+      <label for="course2_topic">Course Topic:</label>
+      <input type="text" name="student[courses][][topic]" id="course2_topic">
+      <input type="submit" name="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
